@@ -16,6 +16,15 @@ Collection of strings which can be translated into truth values, `true` and `fal
 
 An string can not return `true` for both `#truthy?` and `#falsey?`, but may return `false` for both of them.
 
+`Object` also has `truthy?` and `falsey?`.
+
+```rb
+Object.truthy?
+nil.falsey?
+```
+
+The methods returns `true` if the receiver is truthy or falsey respectively.
+
 ## Installation
 
 Add this line to your application's Gemfile:

@@ -44,3 +44,13 @@ class String
     TrueString::TRUTH_TABLE[self] == false
   end
 end
+
+class Object
+  def truthy?
+    !!self
+  end
+
+  def falsey?
+    !self
+  end
+end
