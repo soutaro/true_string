@@ -40,7 +40,7 @@ class String
     !!TrueString::TRUTH_TABLE[self]
   end
 
-  def falsey?
+  def falsy?
     TrueString::TRUTH_TABLE[self] == false
   end
 end
@@ -50,7 +50,7 @@ class Object
     !!self
   end
 
-  def falsey?
+  def falsy?
     !self
   end
 end

@@ -4,26 +4,26 @@ Collection of strings which can be translated into truth values, `true` and `fal
 
 ```rb
 "true".truthy?
-"false".falsey?
+"false".falsy?
 "yes".truthy?
-"0".falsey?
+"0".falsy?
 "○".truthy?
-"❌".falsey?
+"❌".falsy?
 "はい".truthy?
 ```
 
-`#truthy?` returns `true` if the string can be interpreted as *true*, and returns `false` if not. `#falsey?` returns `true` if the string can be interpreted as *false*, and returns `false` if not.
+`#truthy?` returns `true` if the string can be interpreted as *true*, and returns `false` if not. `#falsy?` returns `true` if the string can be interpreted as *false*, and returns `false` if not.
 
-An string can not return `true` for both `#truthy?` and `#falsey?`, but may return `false` for both of them.
+An string can not return `true` for both `#truthy?` and `#falsy?`, but may return `false` for both of them.
 
-`Object` also has `truthy?` and `falsey?`.
+`Object` also has `truthy?` and `falsy?`.
 
 ```rb
 Object.truthy?
-nil.falsey?
+nil.falsy?
 ```
 
-The methods returns `true` if the receiver is truthy or falsey respectively.
+The methods returns `true` if the receiver is truthy or falsy respectively.
 
 ## Installation
 
